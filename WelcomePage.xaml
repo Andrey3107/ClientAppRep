@@ -10,9 +10,9 @@
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label Content="Enter server url:" Width="400" FontSize="20"></Label>
-            <TextBox Name="UrlTextBox" Margin="0 5" FontSize="16"/>
-            <Button Name="ConnectBtn" Content="Connect" Width="200" Height="40" Click="ConnectBtn_Click"/>
+            <Label Content="Check connection:" Width="400" FontSize="20"></Label>
+            <TextBox IsReadOnly="true" Text="http://localhost:5000" Name="UrlTextBox" Margin="0 5" FontSize="16"/>
+            <Button Name="ConnectBtn" Content="Vefiry" Width="200" Height="40" Click="ConnectBtn_Click"/>
         </StackPanel>
     </Grid>
 </Page>

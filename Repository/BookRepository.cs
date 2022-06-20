@@ -14,9 +14,10 @@ namespace ClientApp.Repository
 {
     public class BookRepository
     {
-        public static string _serviceUrl;
+        private readonly string _serviceUrl;
         public BookRepository()
         {
+            _serviceUrl = Properties.Settings.Default.ServiceUrl+"/books";
         }
         public async Task<List<BookViewModel>> GetAll()
         {

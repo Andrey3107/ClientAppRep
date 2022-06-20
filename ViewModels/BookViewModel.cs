@@ -16,7 +16,7 @@ namespace ClientApp.ViewModels
         public string ImgPath {
             get 
             { 
-                return BookRepository._serviceUrl + "/img/" + imgPath; 
+                return Properties.Settings.Default.ServiceUrl + "/books/img/" + imgPath; 
             }
             set 
             {

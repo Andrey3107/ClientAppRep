@@ -14,7 +14,6 @@ namespace ClientApp
         public WelcomePage()
         {
             InitializeComponent();
-            UrlTextBox.Text = "https://localhost:5001/books";
         }
 
         private async void ConnectBtn_Click(object sender, RoutedEventArgs e)
@@ -25,8 +24,6 @@ namespace ClientApp
                 { 
                     await client.GetAsync(UrlTextBox.Text); 
                 }
-
-                BookRepository._serviceUrl = UrlTextBox.Text;
                 NavigationService.Navigate(new BooksPage());
             }
             catch (Exception)
